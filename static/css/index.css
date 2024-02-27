@@ -155,3 +155,11 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+mydiv {
+  background-color: rgb(225, 225, 225);
+  /* width: 300px;
+  padding: 50px;
+  margin: 20px; */
+}
