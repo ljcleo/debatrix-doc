@@ -6,7 +6,7 @@ More Resources can be found on the formal repo: [SoMeLVLM](https://github.com/Li
 
 ## Citation
 
-If you find our SoMeLVLM or datasets useful, we will greatly appreacite it if you could consider citing our paper:
+If you find our SoMeLVLM or datasets useful, we will greatly appreciate it if you could consider citing our paper:
 
 ```
 @article{zhang2024somelvlm,
