@@ -62,6 +62,43 @@
 
 <body>
 
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="http://www.fudan-disc.com/">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Open Source Models
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="http://med.fudan-disc.com/">
+              DISC-MedLLM
+            </a>
+            <a class="navbar-item" href="http://law.fudan-disc.com/">
+              DISC-LawLLM
+            </a>
+            <a class="navbar-item" href="http://fin.fudan-disc.com/">
+              DISC-FinLLM
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
+
   <!-- <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -312,17 +349,17 @@
 
   <section class="section">
     <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
+      <!-- <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <div class="columns is-centered">
+          <div class="columns is-centered"> -->
             <!-- <img style='height: auto; width: 50%; object-fit: contain' src="static/images/f1.png"
               alt="overview_image"> -->
-              <figure>
-                <img src="static/images/framework.png"  alt="Figure 0" width="1200">
-              </figure>
-          </div>
+      <figure>
+        <img src="static/images/framework.png"  alt="survey" >
+      </figure>
+          <!-- </div>
         </div>
-      </div> 
+      </div>  -->
     </div>
     <br>    <br>
     <div class="container is-max-desktop">
@@ -393,13 +430,6 @@
           social demands that require a combination of complex cognitive abilities and information-processing levels. For instance, the detoxifying 
           task illustrated in Figure (c), involves both hate speech detection and content rewriting. However, the models without 
           these abilities struggle to comprehensively address these aspects, resulting in less than satisfactory outputs.</p>
-        <!-- <p>We propose to taxonomize LLM-generated misinformation from five dimensions including types, domains, sources, intents and errors. 
-          In particular, we categorize the <b>sources</b> of LLM-generated misinformation into hallucination, arbitrary generation and controllable generation 
-          since there are different potential methods to generate misinformation with LLMs. 
-          Also, we divide the <b>intents</b> of generated misinformation into unintentional and intentional generation
-          considering hallucination can potentially 
-          occur in any generation process of LLMs and users without malicious intent may also generate texts containing hallucinated information when using LLMs.</p> -->
-
       </div>
       <div class="columns is-centered">
         <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f2.png"
@@ -413,20 +443,19 @@
 
       <br />
       <div style="text-align:center">
-        <h2 class="title is-3">RQ1: How Can LLMs be Utilized to
-          Generate Misinformation?</h2>
+        <h2 class="title is-3">Datasets</h2>
       </div>
       <div class="content has-text-justified">
         <br>
       <p>
-        We propose to categorize the LLM-based misinformation generation methods into three types based on real-world scenarios (Table 1): Hallucination Generation (HG), Arbitrary Misinformation Generation (AMG) and Controllable Misinformation Generation (CMG).
+        We have develop a 654k social media dataset SoMeData, which consists of five cognitive modules and various CSS task categories.
       </p>
       </div>
       <div class="columns is-centered">
         <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
           alt="overview_image"> -->
           <figure>
-            <img src="static/images/table1.png" alt="Figure 2">
+            <img src="static/images/table1_new.png" alt="Figure 2">
           </figure>
       </div>
       <br>
@@ -606,16 +635,10 @@
       </div>
       <div class="content has-text-justified">
         <br>
-          <p>Considering that the open-sourced LLMs (e.g., Llama) or close-sourced LLMs (e.g., ChatGPT) 
-            are widely adopted, and the potential approaches to generate misinformation with LLMs are based 
-            on real-world scenarios (shown in Table 1) and straightforward to implement, 
-            we anticipate these methods have been potentially utilized to generate misinformation by 
-            normal people unintentionally or malicious users intentionally in the real world. 
-            Thus, our research illustrates the landscape of LLM-generated misinformation to shed light on the potential 
-            risks, enhance the public’s awareness of its harm, and call for collective countering efforts. 
-            We also discuss the implications of our findings and the potential countermeasures, which can 
-            inspire and facilitate more future research on defending against LLM-generated misinformation.</p>
-
+          <p>The data used in this paper are from real users in diverse social media platforms, so the privacy problem
+             is treated cautiously. The data from opensource datasets are safe as the sensitive information has already
+              been masked. For the data we collect, we strictly follow the privacy policy of social media platforms 
+              and will carefully avoid personal information before we release our instruction dataset.</p>
         <br>
       <br>
 
