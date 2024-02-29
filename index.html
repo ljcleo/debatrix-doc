@@ -252,9 +252,9 @@
             <p>We propose a large vision language model specifically tailored for <i><b>social media</b></i> contexts, 
               capable of delivering high-quality text classification and interpretation under zero-shot conditions, 
               fundamentally simplifying the research workflow in computational social science and improving overall reliability.</p>
-            <p>We construct a comprehensive social media framework by combining <b>cognitive abilities</b> with traditional 
+            <p>We construct a comprehensive social media framework by combining <i><b>cognitive abilities</b></i> with traditional 
               social media tasks to support different levels of demands in information processing.</p>
-            <p>We contribute to a large-scale, high-quality multimodal social media dataset, encompassing both pure text 
+            <p>We contribute to a large-scale, high-quality <i><b>multimodal social media dataset</b></i>, encompassing both pure text 
               and multimodal formats, with data from both open-source and self-collected sources, formatted into diverse 
               instruction-tuning formats.</p>
         <br>
@@ -267,17 +267,14 @@
       <div class="content has-text-justified">
         <br>
         <p><b>Limitations in social multimedia understanding</b>: General domain LLMs or LVLMs tend to focus more on text over other modalities, 
-          which is <b>not</b> consistent with real-world user habits on social media. Social media tasks often require fine-grained recognition 
-          ability to combine captions and images from a single post and synthesize the user's intention. Genereal domain large models may not 
-          possess this level of nuanced multimodal understanding, as shown in Figure (a). </p>
+          which is <b>not</b> consistent with real-world user habits on social media. Genereal domain large models may not possess this level 
+          of nuanced multimodal understanding, as shown in Figure (a). </p>
         <p><b>Challenges in informal language understanding</b>: There is a huge gap between the informal speaking style prevalent on social media 
-          and the formal language used in other contexts. As a result, general domain LLMs and LVLMs fall short in recognizing sentiment, humor, 
-          figurative language, and other related concepts when the sentences are expressed casually. The example shown in Figure (b) 
-          demonstrates that the model cannot recognize the wordplay <i><b>banded</b></i> in the user's post. </p>
-        <p><b>Complex cognitive demands in social media tasks</b>: Social media tasks often involve multiple objectives to address high-level 
-          social demands that require a combination of complex cognitive abilities and information-processing levels. For instance, the detoxifying 
-          task illustrated in Figure (c), involves both hate speech detection and content rewriting. However, the models without 
-          these abilities struggle to comprehensively address these aspects, resulting in less than satisfactory outputs.</p>
+          and the formal language used in other contexts. The example shown in Figure (b) demonstrates that the model cannot recognize the 
+          wordplay <i><b>banded</b></i> in the user's post. </p>
+        <p><b>Complex cognitive demands in social media tasks</b>: Social media tasks often involve multiple objectives to address high-level social demands.
+          For instance, the detoxifying task illustrated in Figure (c), involves both hate speech detection and content rewriting. 
+          However, the models without complex cognitive abilities struggle to comprehensively address these aspects.</p> 
       </div>
       <div class="columns is-centered">
         <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f2.png"
@@ -314,18 +311,16 @@
       </div>
       <div class="content has-text-justified">
         <br>
-        <p>To construct a large vision language model capable of understanding and creating multimodal content on social media, 
-          we consider concepts from cognitive teaching methods and build a comprehensive multimodal social media cognitive framework.
-          We begin by designing a cognitive pyramid according to <a href="https://web.archive.org/web/20201212072520id_/https://www.uky.edu/~rsand1/china2018/texts/Bloom%20et%20al%20-Taxonomy%20of%20Educational%20Objectives.pdf">Bloom's Taxonomy</a>, 
+        <p>
+          We design a cognitive pyramid according to <a href="https://web.archive.org/web/20201212072520id_/https://www.uky.edu/~rsand1/china2018/texts/Bloom%20et%20al%20-Taxonomy%20of%20Educational%20Objectives.pdf">Bloom's Taxonomy</a>, 
           which is a classic teaching theory proposed by Benjamin Bloom in 1956. The pyramid contains five cognitive levels: 
           <i><b>Knowledge & Comprehension</b></i>, <i><b>Application</b></i>, <i><b>Analysis</b></i>, <i><b>Evaluation</b></i>, 
           and <i><b>Creation</b></i>.</p>
-        <p><b>Knowledge & Comprehension Level</b>: This level means to recall and understand basic facts. It represents a basic cognitive 
-          ability in our framework. The instruction construction of this level consists of various <b>classification</b> tasks within the 
-          context of social media. </p>
-        <p><b>Application Level</b>: The Application level means to use the information in new situations, which is related to active 
-          involvement in social media. The instruction construction is to make accurate <b>interpretations</b> based on the given ground 
-          truth over various social media domains, implying an understanding of the reasons behind the labels. </p>
+        <p><b>Knowledge & Comprehension Level</b>: This level means to recall and understand basic facts. The instruction construction 
+          of this level consists of various <b>classification</b> tasks within the context of social media. </p>
+        <p><b>Application Level</b>: The Application level means to use the information in new situations. The instruction construction 
+          is to make accurate <b>interpretations</b> based on the given ground truth over various social media domains, implying an 
+          understanding of the reasons behind the labels. </p>
         <p><b>Analysis Level</b>: The analysis level requires the model to analyze the label and furnish the corresponding 
           interpretations independently. We aim for the model to offer explanations <b>in the absence of ground truth labels</b> 
           at this level.</p>
@@ -334,7 +329,7 @@
           detoxification or depolarization for abnormal texts. (2) we instruct the model to explain the underlying reasons for texts or 
           text-image pairs labeled as Misinformation. </p>
         <p><b>Creation Level</b>: The Creation level means to create reliable content related to social media. We tackle this demand 
-          by setting <b>reverse</b> and <b>creation</b> tasks, respectively. In the <b>reverse</b> task, we require the model 
+          by setting <b>reverse</b> and <b>creation</b> tasks. In the <b>reverse</b> task, we require the model 
           to generate opposing viewpoints based on a specified topic and text. In the <b>create</b> task, the task is formulated 
           as the generation of new hashtags on social media.</p>
       <br>
@@ -343,6 +338,7 @@
       <div style="text-align:center">
         <h2 class="title is-3">Experiment Setting</h2>
       </div>
+
       <div class="content has-text-justified">
         <br>
         <p><b>Data Split</b>:
@@ -351,15 +347,68 @@
           </p>
         <p><b>Evaluation Metrics</b>: For classification (CLS) tasks, we report the accuracy (Acc) of test results, which involves 
           string matching after proper processing. For generative (GEN) tasks, we report on automatic metrics such as BLEU and ROUGE. 
-          In addition, we employ GPT-4 as a grading assistant through specific prompts to evaluate the test outcomes by scoring the 
-          response on a scale from 0 to 5, where a higher score signifies greater consistency with the ground truth.
+          In addition, we employ GPT-4 to evaluate the test outcomes by scoring the response on a scale from 0 to 5, where a higher 
+          score signifies greater consistency with the ground truth.
         </p>
-        <p><b>Experiment Result Analysis</b>: We collect results according to the cognitive abilities mentioned in our framework. Specifically, 
-          we collect the in-domain performance of multimodal parts (using overall Acc performance) and the OOD performance 
-          of plain-text parts at the dataset level and categorize them into <i><b>Knowledge & Comprehension</b></i>, 
-          <i><b>Application</b></i>, <i><b>Analysis</b></i>, <i><b>Evaluation</b></i>, and <i><b>Creation</b></i>, five cognitive levels in total.</p>
+        <p><b>Experiment Result Analysis</b>: We conduct both classification task and generation task on both plain text domain and multimodal domain. 
+          Specifically, for tasks containing images, we choose <a href="https://huggingface.co/Salesforce/blip2-flan-t5-xl">Blip2</a>, 
+          <a href="https://huggingface.co/Salesforce/instructblip-vicuna-7b">InstructBlip (both Vicuna-based and FlanT5xl-based)</a>, 
+          <a href="https://huggingface.co/llava-hf/llava-1.5-7b-hf">Llava</a>, and <a href="https://huggingface.co/Vision-CAIR/MiniGPT-4">Minigpt4</a> 
+          as our baseline models.
+        </p>
         <br>
       </div>
+
+      <div class="columns is-centered">
+        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+          alt="overview_image"> -->
+          <figure>
+            <img src="static/images/m_cls.png" style="width:80%" alt="Figure 2">
+          </figure>
+      </div>
+      
+      <div class="columns is-centered">
+        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+          alt="overview_image"> -->
+          <figure>
+            <img src="static/images/m_gen.png" style="width:80%" alt="Figure 2">
+          </figure>
+      </div>
+
+      <div class="content has-text-justified">
+        <br>
+        <p>For tasks involving plain text, we select <a href="https://huggingface.co/meta-llama/Llama-2-7b-chat-hf">Llama-2-7b-chat-hf</a>, 
+          <a href="https://huggingface.co/lmsys/vicuna-7b-v1.1">Vicuna-7b-v1.1</a>, and <a href="https://huggingface.co/THUDM/chatglm2-6b">ChatGLM2-6B</a> 
+          as our baseline models. </p>
+        <br>
+      </div>
+
+      <div class="columns is-centered">
+        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+          alt="overview_image"> -->
+          <figure>
+            <img src="static/images/t_cls.png" style="width:80%" alt="Figure 2">
+          </figure>
+      </div>
+      
+      <div class="columns is-centered">
+        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+          alt="overview_image"> -->
+          <figure>
+            <img src="static/images/t_gen.png" style="width:80%" alt="Figure 2">
+          </figure>
+      </div>
+
+      <div class="content has-text-justified">
+        <br>
+        <p> </p>
+      <p><b>Cognitive Abilities Analysis</b>: We collect results according to the cognitive abilities mentioned in our framework. Specifically, 
+        we collect the in-domain performance of multimodal parts (using overall Acc performance) and the OOD performance 
+        of plain-text parts at the dataset level and categorize them into <i><b>Knowledge & Comprehension</b></i>, 
+        <i><b>Application</b></i>, <i><b>Analysis</b></i>, <i><b>Evaluation</b></i>, and <i><b>Creation</b></i>, five cognitive levels in total.</p>
+      </div>
+      <br>
+
       <div class="columns is-centered">
         <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f6.png"
           alt="overview_image"> -->
@@ -395,7 +444,7 @@
       <br>
 
 
-      <br />
+      <!-- <br />
       <div style="text-align:center">
         <h2 class="title is-3">Ethics Statement</h2>
       </div>
@@ -406,7 +455,7 @@
               been masked. For the data we collect, we strictly follow the privacy policy of social media platforms 
               and will carefully avoid personal information before we release our instruction dataset.</p>
         <br>
-      <br>
+      <br> -->
   </section>
 
 <section class="section" id="BibTeX">
