@@ -214,12 +214,15 @@
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
+          <h2 class="title is-3">Background</h2>
           <div class="content has-text-justified">
             <p>
               The growth of social media, characterized by its multimodal nature, has led to the emergence 
               of diverse phenomena and challenges, which calls for an effective approach to uniformly solve 
-              automated tasks. The powerful Large Vision Language Models make it possible to handle a variety 
+              automated tasks. 
+              </p>
+              <p>
+              The powerful Large Vision Language Models make it possible to handle a variety 
               of tasks simultaneously, but even with carefully designed prompting methods, the general domain 
               models often fall short in aligning with the unique speaking style and context of social media tasks. 
               </p>
@@ -227,11 +230,12 @@
               In this paper, we introduce a Large Vision Language Model for Social Media Processing (SoMeLVLM), 
               which is a cognitive framework equipped with five key capabilities including 
               <i><b>knowledge & comprehension</b></i>, <i><b>application</b></i>, <i><b>analysis</b></i>, 
-              <i><b>evaluation</b></i>, and <i><b>creation</b></i>. SoMeLVLM is designed to understand and generate 
-              realistic social media behavior. We have developed a 654k multimodal social media instruction-tuning 
+              <i><b>evaluation</b></i>, and <i><b>creation</b></i>. 
+              <!-- SoMeLVLM is designed to understand and generate realistic social media behavior.  -->
+              <!-- We have developed a 654k multimodal social media instruction-tuning 
               dataset to support our cognitive framework and fine-tune our model. Our experiments demonstrate that 
               SoMeLVLM achieves state-of-the-art performance in multiple social media tasks. Further analysis shows 
-              its significant advantages over baselines in terms of cognitive abilities.
+              its significant advantages over baselines in terms of cognitive abilities. -->
               </p>
           </div>
         </div>
@@ -249,19 +253,34 @@
       </div>
       <div class="content has-text-justified">
         <br>
-            <p>We propose a large vision language model specifically tailored for <i><b>social media</b></i> contexts, 
+            <p>
+              We discover three major challenges faced by general domain models in addressing the nuances of social media: <b>Limitations in social 
+                multimedia understanding</b>(Figura (a)), <b>Challenges in informal language understanding</b>(Figura (b)), <b>Unable to Cope with 
+                Complex cognitive demands in social media tasks</b>(Figura (c)). Overall, the contributions of our paper are as follows: 
+            </p>
+            <ul>
+              <li><b>Large Vision Language Model SoMeLVLM</b>: We propose a large vision language model specifically tailored for <i><b>social media</b></i> contexts, 
+                capable of delivering high-quality text classification and interpretation under zero-shot conditions, 
+                fundamentally simplifying the research workflow in computational social science and improving overall reliability.</li>
+              <li><b>Social Media Cognitive Pyramid</b>: We construct a comprehensive social media framework by combining <i><b>cognitive abilities</b></i> with traditional 
+                social media tasks to support different levels of demands in information processing.</li>
+              <li><b>High-quality Multimodal Dataset</b>: We contribute to a large-scale, high-quality <i><b>multimodal social media 
+                dataset</b></i>, encompassing both pure text and multimodal formats, with data from both open-source and self-collected 
+                sources, formatted into diverse instruction-tuning formats.</li>
+           </ul>
+            <!-- <p>- We propose a large vision language model specifically tailored for <i><b>social media</b></i> contexts, 
               capable of delivering high-quality text classification and interpretation under zero-shot conditions, 
               fundamentally simplifying the research workflow in computational social science and improving overall reliability.</p>
-            <p>We construct a comprehensive social media framework by combining <i><b>cognitive abilities</b></i> with traditional 
+            <p>- We construct a comprehensive social media framework by combining <i><b>cognitive abilities</b></i> with traditional 
               social media tasks to support different levels of demands in information processing.</p>
-            <p>We contribute to a large-scale, high-quality <i><b>multimodal social media dataset</b></i>, encompassing both pure text 
+            <p>- We contribute to a large-scale, high-quality <i><b>multimodal social media dataset</b></i>, encompassing both pure text 
               and multimodal formats, with data from both open-source and self-collected sources, formatted into diverse 
-              instruction-tuning formats.</p>
+              instruction-tuning formats.</p> -->
         <br>
         <br>
   
 
-      <div style="text-align:center">
+      <!-- <div style="text-align:center">
         <h2 class="title is-3">Challenges Faced by General Domain Models</h2>
       </div>
       <div class="content has-text-justified">
@@ -275,7 +294,8 @@
         <p><b>Complex cognitive demands in social media tasks</b>: Social media tasks often involve multiple objectives to address high-level social demands.
           For instance, the detoxifying task illustrated in Figure (c), involves both hate speech detection and content rewriting. 
           However, the models without complex cognitive abilities struggle to comprehensively address these aspects.</p> 
-      </div>
+      </div> -->
+
       <div class="columns is-centered">
         <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f2.png"
           alt="overview_image"> -->
@@ -284,27 +304,7 @@
           </figure>
       </div>
       <br>
-
-
-      <br />
-      <div style="text-align:center">
-        <h2 class="title is-3">Datasets</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-      <p>
-        We have develop a 654k social media dataset SoMeData, which consists of five cognitive modules and various CSS task categories.
-      </p>
-      </div>
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/table1_new.png" style="width:80%" alt="Figure 2">
-          </figure>
-      </div>
-      <br> 
-
+      
       <br />
       <div style="text-align:center">
         <h2 class="title is-3">Framework Design</h2>
@@ -336,7 +336,26 @@
 
       <br />
       <div style="text-align:center">
-        <h2 class="title is-3">Experiment Setting</h2>
+        <h2 class="title is-3">Datasets</h2>
+      </div>
+      <div class="content has-text-justified">
+        <br>
+      <p>
+        We have develop a 654k social media dataset <b>SoMeData</b>, which consists of five cognitive modules and various CSS task categories.
+      </p>
+      </div>
+      <div class="columns is-centered">
+        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+          alt="overview_image"> -->
+          <figure>
+            <img src="static/images/table1_new.png" style="width:80%" alt="Figure 2">
+          </figure>
+      </div>
+      <br> 
+
+      <br />
+      <div style="text-align:center">
+        <h2 class="title is-3">Experiment Results</h2>
       </div>
 
       <div class="content has-text-justified">
@@ -355,50 +374,70 @@
           Specifically, for tasks containing images, we choose <a href="https://huggingface.co/Salesforce/blip2-flan-t5-xl">Blip2</a>, 
           <a href="https://huggingface.co/Salesforce/instructblip-vicuna-7b">InstructBlip (both Vicuna-based and FlanT5xl-based)</a>, 
           <a href="https://huggingface.co/llava-hf/llava-1.5-7b-hf">Llava</a>, and <a href="https://huggingface.co/Vision-CAIR/MiniGPT-4">Minigpt4</a> 
+          as our baseline models. And for tasks involving plain text, we select <a href="https://huggingface.co/meta-llama/Llama-2-7b-chat-hf">Llama-2-7b-chat-hf</a>, 
+          <a href="https://huggingface.co/lmsys/vicuna-7b-v1.1">Vicuna-7b-v1.1</a>, and <a href="https://huggingface.co/THUDM/chatglm2-6b">ChatGLM2-6B</a> 
           as our baseline models.
         </p>
-        <br>
+        <!-- <br> -->
       </div>
 
       <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/m_cls.png" style="width:80%" alt="Figure 2">
-          </figure>
-      </div>
-      
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/m_gen.png" style="width:80%" alt="Figure 2">
-          </figure>
-      </div>
+        <div class="column is-full-width">
+          <div class="control has-icons-left">
+            <div class="select is-medium is-info is-rounded ">
+              <select id="dropdown" onchange="changeContent()" style="width:auto">
+                <option value="example_1">Results of Multimodal datasets</option>
+                <option value="example_2">Results of Plain Text datasets</option>
+              </select>
+              <div class="icon is-small is-left">
+                <!-- <i class="fas fa-comment-alt"></i> -->
+                <i class="fas fa-table"></i>
+              </div>
+            </div>
+         </div>
+          <!--/ Dropdown -->
 
-      <div class="content has-text-justified">
-        <br>
-        <p>For tasks involving plain text, we select <a href="https://huggingface.co/meta-llama/Llama-2-7b-chat-hf">Llama-2-7b-chat-hf</a>, 
-          <a href="https://huggingface.co/lmsys/vicuna-7b-v1.1">Vicuna-7b-v1.1</a>, and <a href="https://huggingface.co/THUDM/chatglm2-6b">ChatGLM2-6B</a> 
-          as our baseline models. </p>
-        <br>
-      </div>
+          <!-- Content -->
+          <div id="example_1" class="content-section">
+            <br />
+            <div class="columns is-centered">
+              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+                alt="overview_image"> -->
+                <figure>
+                  <img src="static/images/m_cls.png" style="width:80%" alt="Figure 2">
+                </figure>
+            </div>
+            
+            <div class="columns is-centered">
+              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+                alt="overview_image"> -->
+                <figure>
+                  <img src="static/images/m_gen.png" style="width:80%" alt="Figure 2">
+                </figure>
+            </div>
+          </div>
 
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/t_cls.png" style="width:80%" alt="Figure 2">
-          </figure>
+          <div id="example_2" class="content-section"  style="display:none">
+            <br />
+            <div class="columns is-centered">
+              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+                alt="overview_image"> -->
+                <figure>
+                  <img src="static/images/t_cls.png" style="width:80%" alt="Figure 2">
+                </figure>
+            </div>
+            
+            <div class="columns is-centered">
+              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
+                alt="overview_image"> -->
+                <figure>
+                  <img src="static/images/t_gen.png" style="width:80%" alt="Figure 2">
+                </figure>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/t_gen.png" style="width:80%" alt="Figure 2">
-          </figure>
-      </div>
+    </div>
 
       <div class="content has-text-justified">
         <br>
@@ -428,13 +467,63 @@
       </div>
       <br>
 
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div style="text-align:center">
+            <h2 class="title is-3">Demo Examples</h2>
+          </div>
+          <br />
+          <div class="control has-icons-left">
+            <div class="select is-medium is-info is-rounded ", width="80%">
+              <select id="dropdown_2" onchange="changeVideo()" style="width:auto">
+                <option value="video_1">Example 1 </option>
+                <option value="video_2">Example 2 </option>
+                <option value="video_3">Example 3 </option>
+              </select>
+              <div class="icon is-small is-left">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
+         </div>
+          <!--/ Dropdown -->
+          <!-- Content -->
+          <div id="video_1" class="content-section">
+            <br />
+            <div class="columns is-centered">
+            <video id="example_4" autoplay muted loop playsinline width="60%">
+              <source src="./static/videos/demo1.mp4" type="video/mp4">
+            </video>
+          </div>
+          </div>
+
+          <div id="video_2" class="content-section"  style="display:none">
+            <br />
+            <div class="columns is-centered">
+            <video id="example_5" autoplay muted loop playsinline width="60%">
+              <source src="./static/videos/demo2.mp4" type="video/mp4">
+            </video>
+          </div>
+          </div>
+
+          <div id="video_3" class="content-section"  style="display:none">
+            <br />
+            <div class="columns is-centered">
+            <video id="example_6" autoplay muted loop playsinline width="60%">
+              <source src="./static/videos/demo3.mp4" type="video/mp4">
+            </video>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
       <br />
       <div style="text-align:center">
         <h2 class="title is-3">Conclusion</h2>
       </div>
       <div class="content has-text-justified">
         <br>
-          <p>In our work, we introduce <i>SoMeLVLM</i>, a multimodal language model for social media processing, wherein we design five cognitive capabilities, 
+          <p>In our work, we introduce <i><b>SoMeLVLM</b></i>, a multimodal language model for social media processing, wherein we design five cognitive capabilities, 
           each of which is mapped to various levels of social media tasks.</p>
           <p>Building on this, we collect related plain text and multimodal datasets and enhance the capabilities of vision-language models on relevant 
           tasks through instruction tuning. Additionally, we construct an evaluation based on cognitive levels and test our model under zero-shot 
@@ -549,8 +638,19 @@
   function changeContent() {
     const dropdown = document.getElementById("dropdown");
     const selected = dropdown.value;
-    const sections = ["example_1", "example_2", "example_3", "example_4", "example_5", "example_6", "example_7", "example_8", "example_9", "example_10", "example_11", "example_12", "example_13", "example_14"];
+    const sections = ["example_1", "example_2"];
 
+    sections.forEach((section) => {
+      document.getElementById(section).style.display = (section === selected) ? "block" : "none";
+    });
+  }
+</script>
+
+<script>
+  function changeVideo() {
+    const dropdown = document.getElementById("dropdown_2");
+    const selected = dropdown.value;
+    const sections = ["video_1", "video_2", "video_3"];
     sections.forEach((section) => {
       document.getElementById(section).style.display = (section === selected) ? "block" : "none";
     });
