@@ -6,7 +6,7 @@ Iterative Chronological Analysis based on LLM*.
 - [Homepage](https://github.com/ljcleo/Debatrix)
 - [Paper](https://arxiv.org/abs/2403.08010)
 - [Code](https://github.com/ljcleo/Debatrix)
-- [Homepage](https://github.com/ljcleo/Debatrix)
+- [Dataset (PanelBench)](https://github.com/ljcleo/Debatrix/releases/tag/v0.1)
 
 ## Citation
 
