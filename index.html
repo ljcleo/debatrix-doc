@@ -1,34 +1,14 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="SoMeLVLM">
-  <meta name="keywords" content="LLM, Large Vision Language Model, Computational Social Science, Social Media">
+  <meta name="description" content="Debatrix">
+  <meta name="keywords" content="LLM, Debate, Computational Argumentation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SoMeLVLM: A Large Vision Language Model for Social Media Processing</title>
+  <title>Debatrix: Multi-dimensinal Debate Judge with Iterative Chronological Analysis Based on LLM</title>
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<!-- <meta name="generator" content="Jekyll v3.9.3" /> -->
-<meta property="og:title" content="SoMeLVLM: A Large Vision Language Model for Social Media Processing" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://somelvlm.github.io/" />
-<meta property="og:url" content="https://somelvlm.github.io/" />
-<meta property="og:site_name" content="SoMeLVLM: A Large Vision Language Model for Social Media Processing" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://llm-misinformation.github.io/static/images/logo.png" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="SoMeLVLM: A Large Vision Language Model for Social Media Processing" />
-<meta name="twitter:description" content="SoMeLVLM: A Large Vision Language Model for Social Media Processing" />
-<meta name="twitter:site" content="@CanyuChen3" />
-<meta name="twitter:image" content="https://llm-misinformation.github.io/static/images/logo.png" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"SoMeLVLM","name":"SoMeLVLM","url":"https://someLVLM.github.io/"}</script>
-<!-- End Jekyll SEO tag -->
-
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
@@ -40,21 +20,25 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/icon_transparent2.png">
+  <link rel="icon" href="./static/img/icon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
 
   <style>
     .grey-box {
-        background-color: #c0c0c0; /* Grey color */
-        color: rgb(70, 70, 70); /* White text color */
-        padding: 20px; /* Padding inside the box */
-        margin: 20px; /* Margin outside the box */
-        text-align: center; /* Center the text */
+      background-color: #c0c0c0;
+      /* Grey color */
+      color: rgb(70, 70, 70);
+      /* White text color */
+      padding: 20px;
+      /* Padding inside the box */
+      margin: 20px;
+      /* Margin outside the box */
+      text-align: center;
+      /* Center the text */
     }
   </style>
 
@@ -73,57 +57,53 @@
     <div class="navbar-menu">
       <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
         <a class="navbar-item" href="http://www.fudan-disc.com/">
-        <span class="icon">
+          <span class="icon">
             <i class="fas fa-home"></i>
-        </span>
+          </span>
         </a>
-  
+
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More Rearch
-          </a>
+          <a class="navbar-link">More Rearch</a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://alarm-fdu.github.io/">
-              ⏰ALaRM
-            </a>
-            <a class="navbar-item" href="https://xymou.github.io/social_simulation/">
-              🙌Unveiling the Truth and Facilitating Change
-            </a>
+            <a class="navbar-item" href="#">♎Debatrix</a>
           </div>
         </div>
       </div>
-  
+
     </div>
   </nav>
-  
+
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 id="SoMeLVLM: A Large Vision Language Model for Social Media Processing" class="title is-2 publication-title">SoMeLVLM: A Large Vision Language Model for Social Media Processing
-            </h1>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="columns is-vcentered">
+              <div class="column is-narrow">
+                <figure class="image is-128x128 is-inline-block">
+                  <img src="static/img/icon.png" alt="Logo">
+                </figure>
+              </div>
+              <div class="column">
+                <h1 class="title is-1 publication-title">
+                  Debatrix: Multi-dimensinal Debate Judge with Iterative Chronological Analysis Based on LLM
+                </h1>
+              </div>
+            </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://lishi905.github.io/">Xinnong Zhang</a><sup>1*</sup>,</span>
+                <a href="http://www.fudan-disc.com/people">Jingcong Liang</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://haoyuk.github.io/">Haoyu Kuang</a><sup>1*</sup>,</span>
+                <a href="http://www.fudan-disc.com/people">Rong Ye</a><sup>1,3</sup>,</span>
               <span class="author-block">
-                <a href="https://xymou.github.io/">Xinyi Mou</a><sup>1</sup>,
+                <a href="#">Meng Han</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://brucelyu17.github.io/">Hanjia Lyu</a><sup>2</sup>,
+                <a href="#">Ruofei Lai</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="http://www.fudan-disc.com/people">Kun Wu</a><sup>1</sup>,
-              </span>
-              <br/>
-              <span class="author-block">
-                <a href="http://simingchen.me/">Siming Chen</a><sup>1</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>2</sup>,
+                <a href="#">Xinyu Zhang</a><sup>2</sup>,
               </span>
               <span class="author-block">
                 <a href="https://nlp.fudan.edu.cn/28702/list.htm">Xuanjing Huang</a><sup>1</sup>,
@@ -135,15 +115,14 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>Fudan University,</span>
-              <span class="author-block"><sup>2</sup>University of Rochester</span>
-            </div>
-            <div class="is-size-6 publication-authors">
-              <span class="author-block">* Equal contribution</span>
+              <span class="author-block"><sup>2</sup>Huawei Poisson Lab,</span>
+              <span class="author-block"><sup>3</sup>ByteDance</span>
             </div>
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2402.13022.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2403.08010.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -151,7 +130,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2402.13022" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2403.08010" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -159,31 +138,30 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/Lishi905/SoMeLVLM"
-                     class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/ljcleo/Debatrix"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                        <i class="fab fa-github"></i>
+                      <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
-                    </a>
+                  </a>
                 </span>
                 <span class="link-block">
-                  <a href="http://61.155.234.170:60033/"
-                     class="external-link button is-normal is-rounded is-dark">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                        <i class="fa fa-play-circle"></i>
+                      <i class="fa fa-play-circle"></i>
                     </span>
                     <span>Demo</span>
-                    </a>
+                  </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://huggingface.co/Lishi0905/SoMeLVLM"
-                     class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/ljcleo/Debatrix/releases/tag/v0.1"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                        <i class="fas fa-folder"></i>
+                      <i class="fas fa-folder"></i>
                     </span>
-                    <span>Model</span>
-                    </a>
+                    <span>Dataset (PanelBench)</span>
+                  </a>
               </div>
             </div>
           </div>
@@ -194,448 +172,766 @@
 
 
   <section class="section">
-    <div class="container is-max-desktop">
-      <!-- <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="columns is-centered"> -->
-            <!-- <img style='height: auto; width: 50%; object-fit: contain' src="static/images/f1.png"
-              alt="overview_image"> -->
-      <figure>
-        <img src="static/images/framework.png"  alt="survey" >
-      </figure>
-      <div style="text-align:center">
-      <div class="content has-text-justified">
-        <p><i><b>An illustration of Our Social Media Cognitive Framework.</b> We build a cognitive pyramid based 
-          on Bloom's Taxonomy, including cognitive levels of Knowledge & Comprehension, Application, Analysis,
-          Evaluation, and Creation. These cognitive abilities are derived from different types of users on 
-          social media and represent different levels of demands for information processing. </i></p>
-      </div>
-      </div>
-          <!-- </div>
+    <div class="container is-max-widescreen">
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <div class="card">
+            <div class="card-image has-text-centered">
+              <figure class="image">
+                <embed src="static/img/intro.svg" style="width: 80%;" type="image/svg+xml" />
+              </figure>
+            </div>
+            <div class="card-content has-background-grey-lighter">
+              <p class="content has-text-justified">
+                <i>
+                  <b>An LLM debate judge judging a debate between Alice and Bob.</b>
+                  The LLM needs to <span style="background-color: #E8DAEF">understand the arguments and how they counter
+                    each other (purple bubble)</span>;
+                  the LLM also needs to <span style="background-color: #FDEBD0;">evaluate the speeches in multiple
+                    dimensions (orange bubble)</span>.
+                  However, multi-round debates are often long, <span style="background-color: #E5E8E8;">detracting
+                    attention or exceeding the context window (light gray bubble)</span>.
+                </i>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>  -->
-    </div>
-    <br>    <br>
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Background</h2>
+        <div class="column is-half">
           <div class="content has-text-justified">
+            <h2 class="title is-2 has-text-centered">Abstract</h2>
             <p>
-              The growth of social media, characterized by its multimodal nature, has led to the emergence 
-              of diverse phenomena and challenges, which calls for an effective approach to uniformly solve 
-              automated tasks. 
-              </p>
-              <p>
-              The powerful Large Vision Language Models make it possible to handle a variety 
-              of tasks simultaneously, but even with carefully designed prompting methods, the general domain 
-              models often fall short in aligning with the unique speaking style and context of social media tasks. 
-              </p>
-              <p>
-              In this paper, we introduce a Large Vision Language Model for Social Media Processing (SoMeLVLM), 
-              which is a cognitive framework equipped with five key capabilities including 
-              <i><b>knowledge & comprehension</b></i>, <i><b>application</b></i>, <i><b>analysis</b></i>, 
-              <i><b>evaluation</b></i>, and <i><b>creation</b></i>. 
-              <!-- SoMeLVLM is designed to understand and generate realistic social media behavior.  -->
-              <!-- We have developed a 654k multimodal social media instruction-tuning 
-              dataset to support our cognitive framework and fine-tune our model. Our experiments demonstrate that 
-              SoMeLVLM achieves state-of-the-art performance in multiple social media tasks. Further analysis shows 
-              its significant advantages over baselines in terms of cognitive abilities. -->
-              </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- </section>
-  <section class="section"> -->
-    <br>
-    <br>
-    <div class="container is-max-desktop">
-      <!-- Method -->
-      <!-- <br /> -->
-      <div style="text-align:center">
-        <h2 class="title is-3">Our Contributions</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-            <p>
-              We discover three major challenges faced by general domain models in addressing the nuances of social media: <b>Limitations in social 
-                multimedia understanding</b>(Figure (a)), <b>Challenges in informal language understanding</b>(Figure (b)), <b>Unable to Cope with 
-                Complex cognitive demands in social media tasks</b>(Figure (c)). Overall, the contributions of our paper are as follows: 
+              How can we construct an automated debate judge to evaluate an extensive, vibrant, multi-turn debate?
+              This task is challenging, as judging a debate involves grappling with <b>lengthy texts</b>, <b>intricate
+                argument</b> relationships, and <b>multi-dimensional assessments</b>.
+              At the same time, current research mainly focuses on short dialogues, rarely touching upon the evaluation
+              of an entire debate.
             </p>
-            <ul>
-              <li><b>Large Vision Language Model SoMeLVLM</b>: We propose a large vision language model specifically tailored for <i><b>social media</b></i> contexts, 
-                capable of delivering high-quality text classification and interpretation under zero-shot conditions, 
-                fundamentally simplifying the research workflow in computational social science and improving overall reliability.</li>
-              <li><b>Social Media Cognitive Pyramid</b>: We construct a comprehensive social media framework by combining <i><b>cognitive abilities</b></i> with traditional 
-                social media tasks to support different levels of demands in information processing.</li>
-              <li><b>High-quality Multimodal Dataset</b>: We contribute to a large-scale, high-quality <i><b>multimodal social media 
-                dataset</b></i>, encompassing both pure text and multimodal formats, with data from both open-source and self-collected 
-                sources, formatted into diverse instruction-tuning formats.</li>
-           </ul>
-            <!-- <p>- We propose a large vision language model specifically tailored for <i><b>social media</b></i> contexts, 
-              capable of delivering high-quality text classification and interpretation under zero-shot conditions, 
-              fundamentally simplifying the research workflow in computational social science and improving overall reliability.</p>
-            <p>- We construct a comprehensive social media framework by combining <i><b>cognitive abilities</b></i> with traditional 
-              social media tasks to support different levels of demands in information processing.</p>
-            <p>- We contribute to a large-scale, high-quality <i><b>multimodal social media dataset</b></i>, encompassing both pure text 
-              and multimodal formats, with data from both open-source and self-collected sources, formatted into diverse 
-              instruction-tuning formats.</p> -->
-        <br>
-        <br>
-  
-
-      <!-- <div style="text-align:center">
-        <h2 class="title is-3">Challenges Faced by General Domain Models</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-        <p><b>Limitations in social multimedia understanding</b>: General domain LLMs or LVLMs tend to focus more on text over other modalities, 
-          which is <b>not</b> consistent with real-world user habits on social media. Genereal domain large models may not possess this level 
-          of nuanced multimodal understanding, as shown in Figure (a). </p>
-        <p><b>Challenges in informal language understanding</b>: There is a huge gap between the informal speaking style prevalent on social media 
-          and the formal language used in other contexts. The example shown in Figure (b) demonstrates that the model cannot recognize the 
-          wordplay <i><b>banded</b></i> in the user's post. </p>
-        <p><b>Complex cognitive demands in social media tasks</b>: Social media tasks often involve multiple objectives to address high-level social demands.
-          For instance, the detoxifying task illustrated in Figure (c), involves both hate speech detection and content rewriting. 
-          However, the models without complex cognitive abilities struggle to comprehensively address these aspects.</p> 
-      </div> -->
-
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f2.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/intro.png" style="width:80%" alt="Figure 1">
-          </figure>
-      </div>
-      <br>
-      
-      <br />
-      <div style="text-align:center">
-        <h2 class="title is-3">Framework Design</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-        <p>
-          We design a cognitive pyramid according to <a href="https://web.archive.org/web/20201212072520id_/https://www.uky.edu/~rsand1/china2018/texts/Bloom%20et%20al%20-Taxonomy%20of%20Educational%20Objectives.pdf">Bloom's Taxonomy</a>, 
-          which is a classic teaching theory proposed by Benjamin Bloom in 1956. The pyramid contains five cognitive levels: 
-          <i><b>Knowledge & Comprehension</b></i>, <i><b>Application</b></i>, <i><b>Analysis</b></i>, <i><b>Evaluation</b></i>, 
-          and <i><b>Creation</b></i>.</p>
-        <ul>
-          <li><b>Knowledge & Comprehension Level</b>: This level means to recall and understand basic facts. The instruction construction 
-            of this level consists of various <b>classification</b> tasks within the context of social media.</li>
-          <li><b>Application Level</b>: The Application level means to use the information in new situations. The instruction construction 
-            is to make accurate <b>interpretations</b> based on the given ground truth over various social media domains, implying an 
-            understanding of the reasons behind the labels.</li>
-          <li><b>Analysis Level</b>: The analysis level requires the model to analyze the label and furnish the corresponding 
-            interpretations independently. We aim for the model to offer explanations <b>in the absence of ground truth labels</b> 
-            at this level.</li>
-          <li><b>Evaluation Level</b>: At the evaluation level, we pay special attention to the existing prejudices within the data 
-            and the abnormal behavior on social media. The construction of the data is divided into two aspects: (1) we undertake 
-            detoxification or depolarization for abnormal texts. (2) we instruct the model to explain the underlying reasons for texts or 
-            text-image pairs labeled as Misinformation.
-          </li>
-          <li>
-            <b>Creation Level</b>: The Creation level means to create reliable content related to social media. We tackle this demand 
-            by setting <b>reverse</b> and <b>creation</b> tasks. In the <b>reverse</b> task, we require the model 
-            to generate opposing viewpoints based on a specified topic and text. In the <b>create</b> task, the task is formulated 
-            as the generation of new hashtags on social media.
-          </li>
-        </ul>
-          <!-- <p><b>Knowledge & Comprehension Level</b>: This level means to recall and understand basic facts. The instruction construction 
-            of this level consists of various <b>classification</b> tasks within the context of social media. </p>
-          <p><b>Application Level</b>: The Application level means to use the information in new situations. The instruction construction 
-            is to make accurate <b>interpretations</b> based on the given ground truth over various social media domains, implying an 
-            understanding of the reasons behind the labels. </p>
-          <p><b>Analysis Level</b>: The analysis level requires the model to analyze the label and furnish the corresponding 
-            interpretations independently. We aim for the model to offer explanations <b>in the absence of ground truth labels</b> 
-            at this level.</p>
-          <p><b>Evaluation Level</b>: At the evaluation level, we pay special attention to the existing prejudices within the data 
-            and the abnormal behavior on social media. The construction of the data is divided into two aspects: (1) we undertake 
-            detoxification or depolarization for abnormal texts. (2) we instruct the model to explain the underlying reasons for texts or 
-            text-image pairs labeled as Misinformation. </p>
-          <p><b>Creation Level</b>: The Creation level means to create reliable content related to social media. We tackle this demand 
-            by setting <b>reverse</b> and <b>creation</b> tasks. In the <b>reverse</b> task, we require the model 
-            to generate opposing viewpoints based on a specified topic and text. In the <b>create</b> task, the task is formulated 
-            as the generation of new hashtags on social media.</p> -->
-      <br>
-
-      <br />
-      <div style="text-align:center">
-        <h2 class="title is-3">Datasets</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-      <p>
-        We have develop a 654k social media dataset <b>SoMeData</b>, which consists of five cognitive modules and various CSS task categories.
-      </p>
-      </div>
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/table1_new.png" style="width:80%" alt="Figure 2">
-          </figure>
-      </div>
-      <br> 
-
-      <br />
-      <div style="text-align:center">
-        <h2 class="title is-3">Experiment Results</h2>
-      </div>
-
-      <div class="content has-text-justified">
-        <br>
-        <!-- <p><b>Data Split</b>:
-          We fine-tune our model using around 564k training data and evaluate our SoMeLVLM across various aspects of social media, 
-          including 14 multimodal datasets and 12 held-out plain text datasets, totaling around 89k data. 
-          </p>
-        <p><b>Evaluation Metrics</b>: For classification (CLS) tasks, we report the accuracy (Acc) of test results, which involves 
-          string matching after proper processing. For generative (GEN) tasks, we report on automatic metrics such as BLEU and ROUGE. 
-          In addition, we employ GPT-4 to evaluate the test outcomes by scoring the response on a scale from 0 to 5, where a higher 
-          score signifies greater consistency with the ground truth.
-        </p> -->
-        <!-- <b>Experiment Result Analysis</b>:  -->
-        <p>We conduct both classification task and generation task on both plain text domain and multimodal domain. 
-          Specifically, for tasks containing images, we choose <a href="https://huggingface.co/Salesforce/blip2-flan-t5-xl">Blip2</a>, 
-          <a href="https://huggingface.co/Salesforce/instructblip-vicuna-7b">InstructBlip (both Vicuna-based and FlanT5xl-based)</a>, 
-          <a href="https://huggingface.co/llava-hf/llava-1.5-7b-hf">Llava</a>, and <a href="https://huggingface.co/Vision-CAIR/MiniGPT-4">Minigpt4</a> 
-          as our baseline models. And for tasks involving plain text, we select <a href="https://huggingface.co/meta-llama/Llama-2-7b-chat-hf">Llama-2-7b-chat-hf</a>, 
-          <a href="https://huggingface.co/lmsys/vicuna-7b-v1.1">Vicuna-7b-v1.1</a>, and <a href="https://huggingface.co/THUDM/chatglm2-6b">ChatGLM2-6B</a> 
-          as our baseline models.
-        </p>
-        <!-- <br> -->
-      </div>
-
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div class="control has-icons-left">
-            <div class="select is-medium is-info is-rounded ">
-              <select id="dropdown" onchange="changeContent()" style="width:auto">
-                <option value="example_1">Results of Multimodal datasets</option>
-                <option value="example_2">Results of Plain Text datasets</option>
-              </select>
-              <div class="icon is-small is-left">
-                <!-- <i class="fas fa-comment-alt"></i> -->
-                <i class="fas fa-table"></i>
-              </div>
-            </div>
-         </div>
-          <!--/ Dropdown -->
-
-          <!-- Content -->
-          <div id="example_1" class="content-section">
-            <br />
-            <div class="columns is-centered">
-              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-                alt="overview_image"> -->
-                <figure>
-                  <img src="static/images/m_cls.png" style="width:80%" alt="Figure 2">
-                </figure>
-            </div>
-            
-            <div class="columns is-centered">
-              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-                alt="overview_image"> -->
-                <figure>
-                  <img src="static/images/m_gen.png" style="width:80%" alt="Figure 2">
-                </figure>
-            </div>
-          </div>
-
-          <div id="example_2" class="content-section"  style="display:none">
-            <br />
-            <div class="columns is-centered">
-              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-                alt="overview_image"> -->
-                <figure>
-                  <img src="static/images/t_cls.png" style="width:80%" alt="Figure 2">
-                </figure>
-            </div>
-            
-            <div class="columns is-centered">
-              <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/table1.png"
-                alt="overview_image"> -->
-                <figure>
-                  <img src="static/images/t_gen.png" style="width:80%" alt="Figure 2">
-                </figure>
-            </div>
+            <p>
+              By leveraging Large Language Models (LLMs), we propose <i><b>Debatrix</b></i>, which makes the analysis
+              and assessment of multi-turn debates more aligned with majority preferences.
+              Specifically, Debatrix features a <b>vertical, iterative chronological analysis</b> and a <b>horizontal,
+                multi-dimensional evaluation collaboration</b>.
+            </p>
+            <p>
+              To align with real-world debate scenarios, we introduced the <i><b>PanelBench</b></i> benchmark, comparing
+              our system's performance to actual debate outcomes.
+              The findings indicate a notable enhancement over directly using LLMs for debate evaluation.
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-      <div class="content has-text-justified">
-        <br>
-        <p> </p>
-      <p><b>Cognitive Abilities Analysis</b>: We collect results according to the cognitive abilities mentioned in our framework. Specifically, 
-        we collect the in-domain performance of multimodal parts (using overall Acc performance) and the OOD performance 
-        of plain-text parts at the dataset level and categorize them into <i><b>Knowledge & Comprehension</b></i>, 
-        <i><b>Application</b></i>, <i><b>Analysis</b></i>, <i><b>Evaluation</b></i>, and <i><b>Creation</b></i>, five cognitive levels in total.</p>
-      </div>
-      <br>
-
-      <div class="columns is-centered">
-        <!-- <img style='height: auto; width: 90%; object-fit: contain' src="static/images/f6.png"
-          alt="overview_image"> -->
-          <figure>
-            <img src="static/images/radar.png" style="width:90%" alt="Figure 5">
-          </figure>
-      </div>
-
-      <div class="content has-text-justified">
-        <br>
-        <p> </p>
-        <p>Clearly, SoMeLVLM shows greater cognitive ability over baseline models in all of the cognitive levels. 
-          At the multimodal <i><b>Creation</b></i> level, all of the models perform poorly as they are required to 
-          generate three hashtags that best describe the post, which is not an easy task even for human beings.</p>
-        <br>
-      </div>
-      <br>
-
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <div style="text-align:center">
-            <h2 class="title is-3">Demo</h2>
-          </div>
-          <br />
-          <div class="control has-icons-left">
-            <div class="select is-medium is-info is-rounded ", width="80%">
-              <select id="dropdown_2" onchange="changeVideo()" style="width:auto">
-                <option value="video_1">Example 1: Knowledge & Comprehension</option>
-                <option value="video_2">Example 2: Analysis</option>
-                <option value="video_3">Example 3: Creation</option>
-              </select>
-              <div class="icon is-small is-left">
-                <i class="fab fa-youtube"></i>
-              </div>
-            </div>
-         </div>
-          <!--/ Dropdown -->
-          <!-- Content -->
-          <div id="video_1" class="content-section">
-            <br />
-            <!-- <p>Analyze the emotions conveyed by images and text</p> -->
-            <div class="columns is-centered">
-            <video id="example_4" autoplay muted loop playsinline width="80%">
-              <source src="./static/videos/demo2.mp4" type="video/mp4">
-            </video>
-          </div>
-          </div>
-
-          <div id="video_2" class="content-section"  style="display:none">
-            <br />
-            <div class="columns is-centered">
-            <video id="example_5" autoplay muted loop playsinline width="80%">
-              <source src="./static/videos/demo3.mp4" type="video/mp4">
-            </video>
-          </div>
-          </div>
-
-          <div id="video_3" class="content-section"  style="display:none">
-            <br />
-            <div class="columns is-centered">
-            <video id="example_6" autoplay muted loop playsinline width="80%">
-              <source src="./static/videos/demo1.mp4" type="video/mp4">
-            </video>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <br />
-      <div style="text-align:center">
-        <h2 class="title is-3">Conclusion</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-          <p>In our work, we introduce <i><b>SoMeLVLM</b></i>, a multimodal language model for social media processing, wherein we design five cognitive capabilities, 
-          each of which is mapped to various levels of social media tasks.</p>
-          <p>Building on this, we collect related plain text and multimodal datasets and enhance the capabilities of vision-language models on relevant 
-          tasks through instruction tuning. Additionally, we construct an evaluation based on cognitive levels and test our model under zero-shot 
-          conditions, comparing it with other advanced LLMs and LVLMs. The experimental results thoroughly demonstrate the superiority of our model. 
-          Our work contributes to the computational social science field by providing methods for modeling and evaluating various tasks on social media 
-          and a large-scale, high-quality multimodal social media dataset.</p>
-      <br>        
-      <br>
-      <!-- <br />
-      <div style="text-align:center">
-        <h2 class="title is-3">Ethics Statement</h2>
-      </div>
-      <div class="content has-text-justified">
-        <br>
-          <p>The data used in this paper are from real users in diverse social media platforms, so the privacy problem
-             is treated cautiously. The data from opensource datasets are safe as the sensitive information has already
-              been masked. For the data we collect, we strictly follow the privacy policy of social media platforms 
-              and will carefully avoid personal information before we release our instruction dataset.</p>
-        <br>
-      <br> -->
   </section>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-3 publication-title">Related Works about Social Media</h1>
-          <!-- <h1 class="title is-5 publication-title">(Contact: <a href="https://canyuchen.com/">Canyu Chen</a>) </h1> -->
-          <ul>
-            <div class="columns is-centered has-text-centered">
-            <!-- <div class="column is-four-fifths"> -->
-            <div class="column is-three-fourths">
-            <div class="box">
-            <div class="content has-text-justified">
-            <a href="https://arxiv.org/abs/2311.07547">GPT-4V(ision) as A Social Media Analysis Engine</a>
-            <br>
-            - Hanjia Lyu, Jinfa Huang, Daoan Zhang, Yongsheng Yu, Xinyi Mou, Jinsheng Pan, Zhengyuan Yang, Zhongyu Wei, Jiebo Luo.
-            <br>
-            <br>
-            <a href="https://arxiv.org/abs/2402.16333">Unveiling the Truth and Facilitating Change: Towards Agent-based Large-scale Social Movement Simulation</a>
-            <br>
-            - Xinyi Mou, Zhongyu Wei, Xuanjing Huang.
-            <br>
-            <br>
-            <a href="https://lrec-coling-2024.org/accepted-papers/">PASUM: A Pre-training Architecture for Social Media User Modeling based on Text Graph</a>
-            <br>
-            - Kun Wu*, Xinyi Mou*, Lanqing Xue, Zhenzhe Ying, Weiqiang Wang, Qi Zhang, Xuanjing Huang, Zhongyu Wei.
-            <br>
-            <br>
-            <a href="https://www2024.thewebconf.org/accepted/research-tracks/">Unifying Local and Global Knowledge: Empowering Large Language Models as Political Experts with Knowledge Graphs</a>
-            <br>
-            - Xinyi Mou, Zejun Li, Hanjia Lyu, Jiebo Luo, Zhongyu Wei.
-            <br>
-            <br>
-            <a href="https://aclanthology.org/2021.acl-long.99/">Align Voting Behavior with Public Statements for Legislator Representation Learning</a>
-            <br>
-            - Xinyi Mou, Zhongyu Wei, Lei Chen, Shangyi Ning, Yancheng He, Changjian Jiang, Xuanjing Huang.
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div class="content">
+            <h2 class="title is-2">Demo Videos</h2>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <div class="control has-icons-left">
+                <div class="select is-medium is-info is-rounded">
+                  <select id="sel_video" onchange="changeVideo()">
+                    <option value="video_1">DebateArt Debate & Demo Details</option>
+                    <option value="video_2">BP-Collection Debate</option>
+                  </select>
+                  <div class="icon is-small is-left">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
-            </div>
-          </ul>
-        </div>
+          </div>
+          <div id="video_1" class="box video-box">
+            <video muted controls>
+              <source src="./static/video/dart.webm" type="video/webm">
+              <source src="./static/video/dart.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div id="video_2" class="box video-box">
+            <video muted controls>
+              <source src="./static/video/bp.webm" type="video/webm">
+              <source src="./static/video/bp.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{zhang2024somelvlm,
-      author = {Xinnong Zhang and Haoyu Kuang and Xinyi Mou and Hanjia Lyu and Kun Wu and Siming Chen and Jiebo Luo and Xuanjing Huang and Zhongyu Wei},
-      title = {SoMeLVLM: A Large Vision Language Model for Social Media Processing},
-      year = {2024},
-      journal = {arXiv preprint arXiv: 2402.13022}
-    }</code></pre>
-  </div>
-</section>
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-justified">
+            <h2 class="title is-2 has-text-centered">Debatrix</h2>
+            <p>
+              We propose Debatrix, a fine-grained automatic debate judging framework based on LLM that breaks down the
+              task along both <i><b>chronological</b></i> and <i><b>dimensional</b></i> axes.
+            </p>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <div class="card">
+                <div class="card-image has-text-centered">
+                  <figure class="image">
+                    <embed src="static/img/framework.svg" style="width: 80%;" type="image/svg+xml" />
+                  </figure>
+                </div>
+                <div class="card-content has-background-grey-lighter">
+                  <p class="content has-text-justified">
+                    <i>
+                      <b>An illustration of the General Structure of Debatrix.</b>
+                      <b>①</b>: Add speech to context memory;
+                      <b>②</b>: Retrieve relevant pieces of context and analysis;
+                      <b>③</b>: Add analysis and reflections to analysis memory;
+                      <b>④</b>: Fetch analysis for final judgment.
+                      The framework can generate speech judgments, debater judgments, and the winner verdict based on
+                      analysis from single or multiple dimensions.
+                    </i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-half">
+              <div class="content has-text-justified">
+                <h3 class="title is-3">Chronological</h3>
+                <p class="subtitle is-5">Iterative Speech Analysis</p>
+                <p>
+                  We instruct the LLM to analyze the debate <b>speech by speech</b>, maintaining speech and analysis
+                  streams with a <b>memory system</b> and providing content analysis of previous speeches when analyzing
+                  new speeches.
+                  After reviewing all speeches, the LLM makes decisions based on all analyses.
+                  This iterative approach lets the LLM concentrate on one speech at a time and understand the context
+                  more
+                  effectively.
+                  It also produces feedback or decisions for each <b>speech</b>, each <b>debater</b>, and the <b>final
+                    winner</b>.
+                </p>
+              </div>
+            </div>
+            <div class="column is-half">
+              <div class="content has-text-justified">
+                <h3 class="title is-3">Dimensional</h3>
+                <p class="subtitle is-5">Multi-Dimensional Collaboration</p>
+                <p>
+                  Debatrix also allows LLMs to focus on a <b>specific judging dimension</b>, such as argument, language,
+                  or clash, during the speech analyzing process.
+                  Each LLM agent can make comments on these specific aspects.
+                  For the overall judgment, all these individual analyses are combined into one summary, providing a
+                  <b>systematic judgment</b> across multiple dimensions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-justified">
+            <h2 class="title is-2 has-text-centered">PanelBench</h2>
+            <p>
+              Furthermore, we introduce PanelBench, a novel benchmark for evaluating automatic debate judging systems.
+              PanelBench consists of two collections of debates with judgments: <i><b>DebateArt</b></i> for 1v1 debates
+              with dimensional judgments and <i><b>BP-Competition</b></i> for high-quality debates with multiple
+              debaters on each side.
+            </p>
+          </div>
+          <div class="columns is-desktop">
+            <div class="column is-half-desktop">
+              <div class="content has-text-justified">
+                <h3 class="title is-3">DebateArt</h3>
+                <p class="subtitle is-5">1v1 Debates with Dimensional Judgments</p>
+                <p>
+                  DebateArt debates sources from <a href="https://www.debateart.com/">DebateArt</a>, an online debate
+                  platform that provides 1v1 debate arenas following competitive debate formats.
+                  Debates vary in speech count and length and have <b>dimensional voting results</b>.
+                  PanelBench includes 100 valid debates with valid votes from DebateArt.
+                </p>
+              </div>
+              <div class="columns is-centered">
+                <div class="column is-narrow">
+                  <div class="table-container has-text-centered">
+                    <table class="table is-striped is-hoverable is-inline-block">
+                      <thead>
+                        <tr>
+                          <th class="has-text-left"></th>
+                          <th class="has-text-right"><abbr title="number of speeches">#&nbsp;Speech</abbr></th>
+                          <th class="has-text-right"><abbr
+                              title="number of tokens per speech">#&nbsp;Speech&nbsp;Token</abbr></th>
+                          <th class="has-text-right"><abbr
+                              title="number of tokens per debate">#&nbsp;Debate&nbsp;Token</abbr></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="has-text-left">Min</th>
+                          <td class="has-text-right">4.0</td>
+                          <td class="has-text-right">53.0</td>
+                          <td class="has-text-right">468.0</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Mean</th>
+                          <td class="has-text-right">6.7</td>
+                          <td class="has-text-right">650.5</td>
+                          <td class="has-text-right">4,342.6</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Max</th>
+                          <td class="has-text-right">10.0</td>
+                          <td class="has-text-right">2,368.0</td>
+                          <td class="has-text-right">12,337.0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                  On DebateArt, voters must consider and vote on four metrics for comparative performance insights:
+                  <b>argument</b>, <b>source</b>, <b>legibility</b>, and <b>conduct</b>.
+                  To align with oral debates that are not formatted, we merged two dimensions — legibility and conduct —
+                  into a single <b>language</b> dimension, representing the language style.
+                </p>
+              </div>
+              <div class="columns is-centered">
+                <div class="column is-narrow">
+                  <div class="table-container">
+                    <div class="table-container has-text-centered">
+                      <table class="table is-striped is-hoverable is-inline-block">
+                        <thead>
+                          <tr>
+                            <th class="has-text-left">Dimension</th>
+                            <th class="has-text-right"><abbr title="number of Pro wins">Pro</abbr></th>
+                            <th class="has-text-right"><abbr title="number of ties">Tie</abbr></th>
+                            <th class="has-text-right"><abbr title="number of Con wins">Con</abbr></th>
+                            <th class="has-text-right"><abbr
+                                title="RMSE (100x) when matching dimensional winners to general ones">D2G&nbsp;RMSE</abbr>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="has-text-left">Argument</th>
+                            <td class="has-text-right">33</td>
+                            <td class="has-text-right">11</td>
+                            <td class="has-text-right">56</td>
+                            <td class="has-text-right">23.85</td>
+                          </tr>
+                          <tr>
+                            <th class="has-text-left">Source</th>
+                            <td class="has-text-right">14</td>
+                            <td class="has-text-right">67</td>
+                            <td class="has-text-right">19</td>
+                            <td class="has-text-right">41.02</td>
+                          </tr>
+                          <tr>
+                            <th class="has-text-left">Language</th>
+                            <td class="has-text-right">9</td>
+                            <td class="has-text-right">66</td>
+                            <td class="has-text-right">25</td>
+                            <td class="has-text-right">47.20</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th class="has-text-left">General</th>
+                            <td class="has-text-right">37</td>
+                            <td class="has-text-right">7</td>
+                            <td class="has-text-right">56</td>
+                            <td class="has-text-right">-</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-half-desktop">
+              <div class="content has-text-justified">
+                <h3 class="title is-3">BP-Competition</h3>
+                <p class="subtitle is-5">High-Quality Debates with More Debaters</p>
+                <p>
+                  BP-Competition includes 22 debates transcribed from world-class competitive debate competitions.
+                  These debates follow the British Parliamentary (BP) format involving <b>four teams</b> (two on each
+                  side), enriching PanelBench with long, complex, high-quality samples.
+                </p>
+              </div>
+              <div class="columns is-centered">
+                <div class="column is-narrow">
+                  <div class="table-container has-text-centered">
+                    <table class=" table is-striped is-hoverable is-inline-block">
+                      <thead>
+                        <tr>
+                          <th class="has-text-left"></th>
+                          <th class="has-text-right"><abbr
+                              title="number of tokens per speech">#&nbsp;Speech&nbsp;Token</abbr></th>
+                          <th class="has-text-right"><abbr
+                              title="number of tokens per debate">#&nbsp;Debate&nbsp;Token</abbr></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="has-text-left">Min</th>
+                          <td class="has-text-right">1,478.0</td>
+                          <td class="has-text-right">13,571.0</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Mean</th>
+                          <td class="has-text-right">1,892.5</td>
+                          <td class="has-text-right">15,139.9</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Max</th>
+                          <td class="has-text-right">2,411.0</td>
+                          <td class="has-text-right">17,089.0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                  In BP debates, four teams (OG, OO, CG, and CO) are divided into two sides of a motion but compete
+                  against all three other teams in the debate.
+                  PanelBench requires judging which of the four teams is the best.
+                  Some BP debates have <b>more than one winners</b>;
+                  PanelBench treats predicting any winning teams as correct.
+                </p>
+              </div>
+              <div class="columns is-centered">
+                <div class="column is-narrow">
+                  <div class="table-container has-text-centered">
+                    <table class="table is-striped is-hoverable is-inline-block">
+                      <thead>
+                        <tr>
+                          <th class="has-text-left">Debater</th>
+                          <th class="has-text-right"><abbr title="number of wins">#&nbsp;Wins</abbr></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th class="has-text-left">Opening Government (OG)</th>
+                          <td class="has-text-right">8</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Opening Opposition (OO)</th>
+                          <td class="has-text-right">16</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Closing Government (CG)</th>
+                          <td class="has-text-right">8</td>
+                        </tr>
+                        <tr>
+                          <th class="has-text-left">Closing Opposition (CO)</th>
+                          <td class="has-text-right">8</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-justified">
+            <h2 class="title is-2 has-text-centered">Experiments</h2>
+            <p>
+              We conducted experiments on PanelBench to evaluate the debate judging performance of LLMs.
+              We also compare our Debatrix framework (using ChatGPT as the backbone LLM) with judging directly with
+              LLMs.
+              For DebateArt debates, We predict the winner in two ways, calculating the RMSE when matching them with
+              true winners:
+            </p>
+            <ul>
+              <li>Score Comparison: Compare all debaters' score; for source and language, score differences within ±3
+                become ties.</li>
+              <li>Direct Prediction: Predict the winner directly.</li>
+            </ul>
+            <p>
+              For BP-Competition debates, we always predict the winner directly, measuring the completion rate and
+              predict accuracy.
+            </p>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <div class="table-container has-text-centered">
+                <table class="table is-striped is-hoverable is-inline-block">
+                  <thead>
+                    <tr>
+                      <th class="is-vcentered has-text-left" rowspan="2">Model</th>
+                      <th class="has-text-centered" colspan="2">DebateArt&nbsp;(RMSE)</th>
+                      <th class="has-text-centered" colspan="2">BP-Competition</th>
+                    </tr>
+                    <tr>
+                      <th class="has-text-right">Score&nbsp;Comparison↓</th>
+                      <th class="has-text-right">Direct&nbsp;Prediction↓</abbr></th>
+                      <th class="has-text-right">Completion&nbsp;Rate↑</th>
+                      <th class="has-text-right">Accuracy↑</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="has-text-left">
+                        <abbr title="Input the entire debate to ChatGPT at once and consider all dimensions together">
+                          <kbd>ChatGPT</kbd>
+                        </abbr>
+                      </th>
+                      <td class="has-text-right">49.98</td>
+                      <td class="has-text-right">51.16</td>
+                      <td class="has-text-right">13.64</td>
+                      <td class="has-text-right">0.00</td>
+                    </tr>
+                    <tr>
+                      <th class="has-text-left">
+                        <abbr title="Same as ChatGPT, but replacing backbone LLM with GPT-4">
+                          <kbd>GPT-4</kbd>
+                        </abbr>
+                      </th>
+                      <td class="has-text-right">44.84</td>
+                      <td class="has-text-right">46.55</td>
+                      <td class="has-text-right"><b>100.00</b></td>
+                      <td class="has-text-right">34.85</td>
+                    </tr>
+                    <tr>
+                      <th class="has-text-left">
+                        <abbr title="Introduce iterative chronological analysis but do not split dimensions">
+                          <kbd>Chronological</kbd>
+                        </abbr>
+                      </th>
+                      <td class="has-text-right">48.61</td>
+                      <td class="has-text-right">48.71</td>
+                      <td class="has-text-right"><b>100.00</b></td>
+                      <td class="has-text-right">30.30</td>
+                    </tr>
+                    <tr>
+                      <th class="has-text-left">
+                        <abbr title="Introduce multi-dimensional collaboration but input the debate as a whole">
+                          <kbd>Dimensional</kbd>
+                        </abbr>
+                      </th>
+                      <td class="has-text-right">44.91</td>
+                      <td class="has-text-right">45.01</td>
+                      <td class="has-text-right">36.36</td>
+                      <td class="has-text-right">12.12</td>
+                    </tr>
+                    <tr>
+                      <th class="has-text-left">
+                        <abbr
+                          title="Almost identical to Debatrix, but fetch raw content instead of content analysis of previous speeches when analyzing new speeches">
+                          <kbd>NonIterative</kbd>
+                        </abbr>
+                      </th>
+                      <td class="has-text-right">44.17</td>
+                      <td class="has-text-right">44.03</td>
+                      <td class="has-text-right">66.67</td>
+                      <td class="has-text-right">36.36</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th class="has-text-left"><kbd>Debatrix</kbd></th>
+                      <td class="has-text-right"><b>42.21</b></td>
+                      <td class="has-text-right"><b>41.75</b></td>
+                      <td class="has-text-right"><b>100.00</b></td>
+                      <td class="has-text-right"><b>51.52</b></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Iterative chronological analysis is crucial for ChatGPT to handle very long debates.
+              Meanwhile, dimensional collaboration is also beneficial in shorter debates.
+              Nevertheless, combining both of them yields a better performance.
+              Finally, using previous content analysis iteratively, Debatrix consistently <b>outperforms all baseline
+                models</b> on <b>both debate collections</b>, including GPT-4 with a more powerful LLM.
+            </p>
+          </div>
+          <div class="columns is-vcentered">
+            <div class="column">
+              <h3 class="title is-3">Analysis</h3>
+            </div>
+            <div class="column is-narrow">
+              <div class="control has-icons-left">
+                <div class="select is-medium is-info is-rounded">
+                  <select id="sel_analysis" onchange="changeAnalysis()">
+                    <option value="analysis_1">Multi-Turn & Long Debate</option>
+                    <option value="analysis_2">Argument & Multi Dim.</option>
+                    <option value="analysis_3">Position Bias on GPT-4</option>
+                  </select>
+                  <div class="icon is-small is-left">
+                    <i class="fas fa-table"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="analysis_1" class="box analysis-box">
+            <figure class="image">
+              <embed src="static/img/long.svg" style="width: 100%;">
+            </figure>
+            <div class="content has-text-justified">
+              <p>
+                DebateArt debates vary in <b>speech count</b> and <b>length</b>:
+                among all 100 debates, 34 have no fewer than 8 speeches, and 51 contain at least 4,000 tokens.
+                On one hand, some baseline models show partial advantage but fail to cover all scenarios.
+                On the other hand, Debatrix <b>maintains a relatively low RMSE regardless of the number of
+                  speeches or tokens.</b>
+                This shows that Debatrix effectively assists the LLM in evaluating long, multi-turn debates while
+                extending its advantage to short debates.
+              </p>
+            </div>
+          </div>
+          <div id="analysis_2" class="box analysis-box">
+            <div class="columns is-desktop is-vcentered">
+              <div class="column is-narrow-desktop">
+                <div class="content has-text-justified">
+                  <div class="table-container">
+                    <table class="table is-striped is-hoverable">
+                      <thead>
+                        <tr>
+                          <th>Model</th>
+                          <th class="has-text-right">Score&nbsp;Comparison↓</th>
+                          <th class="has-text-right">Direct&nbsp;Prediction↓</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <abbr title="Introduce multi-dimensional collaboration but input the debate as a whole">
+                              <kbd>Dimensional</kbd>
+                            </abbr>
+                          </th>
+                          <td class="has-text-right">52.06</td>
+                          <td class="has-text-right">52.23</td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <abbr title="Same as Dimensional, but replacing backbone LLM with GPT-4">
+                              <kbd>Dimensional</kbd> (GPT-4)
+                            </abbr>
+                          </th>
+                          <td class="has-text-right">51.13</td>
+                          <td class="has-text-right">51.06</td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <abbr
+                              title="Almost identical to Debatrix, but fetch raw content instead of content analysis of previous speeches when analyzing new speeches">
+                              <kbd>NonIterative</kbd>
+                            </abbr>
+                          </th>
+                          <td class="has-text-right">50.87</td>
+                          <td class="has-text-right">50.37</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th><kbd>Debatrix</kbd></th>
+                          <td class="has-text-right"><b>47.50</b></td>
+                          <td class="has-text-right"><b>47.67</b></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content has-text-justified">
+                  <p>
+                    Among all dimensions, the argument dimension is the major one affecting debaters' persuasiveness.
+                    Using the more powerful GPT-4 does not improve <kbd>Dimensional</kbd> much on this dimension;
+                    instead, chronological analysis brings a <b>significant improvement</b>.
+                    Iterative analysis when analyzing speeches is also beneficial, allowing Debatrix to understand
+                    arguments better <b>without resorting to larger models</b>.
+                  </p>
+                  <p>
+                    Improvements in specific dimensions eventually result in better general judgments under
+                    <b>dimensional collaboration</b>:
+                    models that split dimensions (<kbd>Dimensional</kbd> and <kbd>Debatrix</kbd>) consistently
+                    outperform their duets without splitting dimensions (<kbd>ChatGPT</kbd> and
+                    <kbd>Chronological</kbd>).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="analysis_3" class="box analysis-box">
+            <div class="columns is-desktop is-vcentered">
+              <div class="column is-narrow-desktop">
+                <div class="content has-text-justified">
+                  <div class="table-container">
+                    <table class="table is-striped is-hoverable">
+                      <thead>
+                        <tr>
+                          <th class="is-vcentered" rowspan="2">Model</th>
+                          <th class="has-text-centered" colspan="2">Opening</th>
+                          <th class="has-text-centered" colspan="2">Closing</th>
+                          <th class="is-vcentered" rowspan="2">N/A</th>
+                        </tr>
+                        <tr>
+                          <th class="has-text-right">OG</th>
+                          <th class="has-text-right">OO</th>
+                          <th class="has-text-right">CG</th>
+                          <th class="has-text-right">CO</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <abbr title="Same as ChatGPT, but replacing backbone LLM with GPT-4">
+                              <kbd>GPT-4</kbd>
+                            </abbr>
+                          </th>
+                          <td class="has-text-right">0</td>
+                          <td class="has-text-right">0</td>
+                          <td class="has-text-right">10</td>
+                          <td class="has-text-right">56</td>
+                          <td class="has-text-right">0</td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <abbr
+                              title="Almost identical to Debatrix, but fetch raw content instead of content analysis of previous speeches when analyzing new speeches">
+                              <kbd>NonIterative</kbd>
+                            </abbr>
+                          </th>
+                          <td class="has-text-right">17</td>
+                          <td class="has-text-right">12</td>
+                          <td class="has-text-right">9</td>
+                          <td class="has-text-right">6</td>
+                          <td class="has-text-right">22</td>
+                        </tr>
+                        <tr>
+                          <th><kbd>Debatrix</kbd></th>
+                          <td class="has-text-right">13</td>
+                          <td class="has-text-right">21</td>
+                          <td class="has-text-right">15</td>
+                          <td class="has-text-right">17</td>
+                          <td class="has-text-right">0</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th>
+                            <i>
+                              <abbr
+                                title="expectation number each debater is chosen when selecting one of the true winners randomly for each trial">
+                                Gold
+                              </abbr>
+                            </i>
+                          </th>
+                          <td class="has-text-right">12</td>
+                          <td class="has-text-right">30</td>
+                          <td class="has-text-right">13.5</td>
+                          <td class="has-text-right">10.5</td>
+                          <td class="has-text-right">0</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content has-text-justified">
+                  <p>
+                    Further investigation on BP-Competition has revealed that GPT-4 <b>always predicts the closing
+                      half
+                      (CG and CO)</b> which speaks after the opening half (OG and OO);
+                    in most cases, it selects <b>CO who speaks the last</b>.
+                    Meanwhile, ChatGPT-based Debatrix gives relatively balanced predictions that roughly match the
+                    expectation.
+                  </p>
+                  <p>
+                    We conjecture that <i><b>position bias</b></i> could be a significant factor that causes GPT-4 to
+                    fail in judging BP debates:
+                    LLM may prefer the last speaker who can refute others while not being refuted, thus seemingly more
+                    convincing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-justified">
+            <h2 class="title is-2 has-text-centered">Conclusion</h2>
+            <ul>
+              <li>
+                We proposed a fine-grained debate judging framework based on LLM, <i><b>Debatrix</b></i>.
+                We decompose the debate judging task into a iterative chronological analysis to tackle multi-turn, long
+                debates and elaborate multiple dimensions to generate systematic judgments.
+              </li>
+              <li>
+                We introduce a novel debate judging benchmark, <i><b>PanelBench</b></i>, to assess our framework and
+                other
+                automatic
+                debate judging approaches, covering multi-dimensional and multi-debater scenarios.
+              </li>
+              <li>
+                Under both settings, Debatrix <b>significantly improves ChatGPT</b>, aiding it in judging long debates
+                that
+                exceed the context window and <b>outperforming bare GPT-4</b>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-widescreen content">
+      <div class="content has-text-justified">
+        <h3 class="title is-3">Citation</h3>
+        <pre><code>@article{liang2024debatrix,
+    title={Debatrix: Multi-dimensinal Debate Judge with Iterative Chronological Analysis Based on LLM},
+    author={Liang, Jingcong and Ye, Rong and Han, Meng and Lai, Ruofei and Zhang, Xinyu and Huang, Xuanjing and Wei, Zhongyu},
+    journal={arXiv preprint arXiv:2403.08010},
+    year={2024}
+}</code></pre>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -643,18 +939,13 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
-          <div class="content">
+          <div class="content has-text-centered">
             <p>
-              This website is licensed under a <a rel="license"
-                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-                Commons Attribution-ShareAlike 4.0 International License</a>.
+              This website is inspired by <a href="https://github.com/nerfies/nerfies.github.io">nerfies.github.io</a>.
             </p>
             <p>
-              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
-                code</a> of this website,
-              we just ask that you link back to this page in the footer.
-              Please remember to remove the analytics code included in the header of the website which
-              you do not want on your website.
+              It is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
           </div>
         </div>
@@ -662,27 +953,31 @@
     </div>
   </footer>
 
-<script>
-  function changeContent() {
-    const dropdown = document.getElementById("dropdown");
-    const selected = dropdown.value;
-    const sections = ["example_1", "example_2"];
+  <script>
+    let sel_analysis = document.getElementById("sel_analysis")
+    let sel_video = document.getElementById("sel_video")
+    let cur_analysis = sel_analysis.value
+    let cur_video = sel_video.value
 
-    sections.forEach((section) => {
-      document.getElementById(section).style.display = (section === selected) ? "block" : "none";
-    });
-  }
-</script>
+    document.querySelectorAll(".analysis-box").forEach(
+      box => box.classList.toggle("is-hidden", force = box.id !== sel_analysis.value)
+    )
 
-<script>
-  function changeVideo() {
-    const dropdown = document.getElementById("dropdown_2");
-    const selected = dropdown.value;
-    const sections = ["video_1", "video_2", "video_3"];
-    sections.forEach((section) => {
-      document.getElementById(section).style.display = (section === selected) ? "block" : "none";
-    });
-  }
-</script>
+    document.querySelectorAll(".video-box").forEach(
+      box => box.classList.toggle("is-hidden", force = box.id !== sel_video.value)
+    )
+
+    function changeAnalysis() {
+      document.getElementById(cur_analysis).classList.toggle("is-hidden")
+      document.getElementById(sel_analysis.value).classList.toggle("is-hidden")
+      cur_analysis = sel_analysis.value
+    }
+
+    function changeVideo() {
+      document.getElementById(cur_video).classList.toggle("is-hidden")
+      document.getElementById(sel_video.value).classList.toggle("is-hidden")
+      cur_video = sel_video.value
+    }
+  </script>
 
 </html>
