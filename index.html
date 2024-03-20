@@ -83,7 +83,7 @@ logo: ./static/img/icon.png
   </nav>
 
 
-  <section class="hero">
+  <section class="hero is-light is-halfheight">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -147,7 +147,7 @@ logo: ./static/img/icon.png
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/ljcleo/Debatrix"
+                  <a href="https://github.com/ljcleo/debatrix"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -156,7 +156,7 @@ logo: ./static/img/icon.png
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://debatrix.hzmc.xyz:8123" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fa fa-play-circle"></i>
                     </span>
@@ -164,7 +164,7 @@ logo: ./static/img/icon.png
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/ljcleo/Debatrix/releases/tag/v0.1"
+                  <a href="https://github.com/ljcleo/debatrix/releases/tag/v0.1"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-folder"></i>
@@ -190,7 +190,7 @@ logo: ./static/img/icon.png
                 <embed src="static/img/intro.svg" style="width: 80%;" type="image/svg+xml" />
               </figure>
             </div>
-            <div class="card-content has-background-grey-lighter">
+            <div class="card-content has-background-light">
               <p class="content has-text-justified">
                 <i>
                   <b>An LLM debate judge judging a debate between Alice and Bob.</b>
@@ -233,39 +233,41 @@ logo: ./static/img/icon.png
   </section>
 
 
-  <section class="section">
-    <div class="container is-max-widescreen">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <div class="content">
-            <h2 class="title is-2">Demo Videos</h2>
-          </div>
-          <div class="columns is-centered">
-            <div class="column is-narrow">
-              <div class="control has-icons-left">
-                <div class="select is-medium is-info is-rounded">
-                  <select id="sel_video" onchange="changeVideo()">
-                    <option value="video_1">1v1 Debate & Demo Details</option>
-                    <option value="video_2">BP Debate (EUDC 2020 QF)</option>
-                  </select>
-                  <div class="icon is-small is-left">
-                    <i class="fab fa-youtube"></i>
+  <section class="hero is-info is-fullheight">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <div class="content">
+              <h2 class="title is-2">Demo Videos</h2>
+            </div>
+            <div class="columns is-centered">
+              <div class="column is-narrow">
+                <div class="control has-icons-left">
+                  <div class="select is-medium is-info is-rounded">
+                    <select id="sel_video" onchange="changeVideo()">
+                      <option value="video_1">1v1 Debate & Demo Details</option>
+                      <option value="video_2">BP Debate (EUDC 2020 QF)</option>
+                    </select>
+                    <div class="icon is-small is-left">
+                      <i class="fab fa-youtube"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="video_1" class="box video-box">
-            <video muted controls>
-              <source src="./static/video/dart.webm" type="video/webm">
-              <source src="./static/video/dart.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div id="video_2" class="box video-box">
-            <video muted controls>
-              <source src="./static/video/bp.webm" type="video/webm">
-              <source src="./static/video/bp.mp4" type="video/mp4">
-            </video>
+            <div id="video_1" class="box has-background-dark video-box">
+              <video muted controls>
+                <source src="./static/video/dart.webm" type="video/webm">
+                <source src="./static/video/dart.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div id="video_2" class="box has-background-dark video-box">
+              <video muted controls>
+                <source src="./static/video/bp.webm" type="video/webm">
+                <source src="./static/video/bp.mp4" type="video/mp4">
+              </video>
+            </div>
           </div>
         </div>
       </div>
@@ -292,7 +294,7 @@ logo: ./static/img/icon.png
                     <embed src="static/img/framework.svg" style="width: 80%;" type="image/svg+xml" />
                   </figure>
                 </div>
-                <div class="card-content has-background-grey-lighter">
+                <div class="card-content has-background-light">
                   <p class="content has-text-justified">
                     <i>
                       <b>An illustration of the General Structure of Debatrix.</b>
@@ -704,10 +706,12 @@ logo: ./static/img/icon.png
               </div>
             </div>
           </div>
-          <div id="analysis_1" class="box analysis-box">
-            <figure class="image">
-              <embed src="static/img/long.svg" style="width: 100%;">
-            </figure>
+          <div id="analysis_1" class="box has-background-light analysis-box">
+            <div class="content">
+              <figure class="image">
+                <embed src="static/img/long.svg" style="width: 100%;">
+              </figure>
+            </div>
             <div class="content has-text-justified">
               <p>
                 DebateArt debates vary in <b>speech count</b> and <b>length</b>:
@@ -720,7 +724,7 @@ logo: ./static/img/icon.png
               </p>
             </div>
           </div>
-          <div id="analysis_2" class="box analysis-box">
+          <div id="analysis_2" class="box has-background-light analysis-box">
             <div class="columns is-desktop is-vcentered">
               <div class="column is-narrow-desktop">
                 <div class="content has-text-justified">
@@ -794,7 +798,7 @@ logo: ./static/img/icon.png
               </div>
             </div>
           </div>
-          <div id="analysis_3" class="box analysis-box">
+          <div id="analysis_3" class="box has-background-light analysis-box">
             <div class="columns is-desktop is-vcentered">
               <div class="column is-narrow-desktop">
                 <div class="content has-text-justified">
@@ -896,30 +900,33 @@ logo: ./static/img/icon.png
   </section>
 
 
-  <section class="section">
-    <div class="container is-max-widescreen">
-      <div class="columns is-centered">
-        <div class="column">
-          <div class="content has-text-justified">
-            <h2 class="title is-2 has-text-centered">Conclusion</h2>
-            <ul>
-              <li>
-                We proposed a fine-grained debate judging framework based on LLM, <i><b>Debatrix</b></i>.
-                We decompose the debate judging task into a iterative chronological analysis to tackle multi-turn, long
-                debates and elaborate multiple dimensions to generate systematic judgments.
-              </li>
-              <li>
-                We introduce a novel debate judging benchmark, <i><b>PanelBench</b></i>, to assess our framework and
-                other
-                automatic
-                debate judging approaches, covering multi-dimensional and multi-debater scenarios.
-              </li>
-              <li>
-                Under both settings, Debatrix <b>significantly improves ChatGPT</b>, aiding it in judging long debates
-                that
-                exceed the context window and <b>outperforming bare GPT-4</b>.
-              </li>
-            </ul>
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-justified">
+              <h2 class="title is-2 has-text-centered">Conclusion</h2>
+              <ul>
+                <li>
+                  We proposed a fine-grained debate judging framework based on LLM, <i><b>Debatrix</b></i>.
+                  We decompose the debate judging task into a iterative chronological analysis to tackle multi-turn,
+                  long
+                  debates and elaborate multiple dimensions to generate systematic judgments.
+                </li>
+                <li>
+                  We introduce a novel debate judging benchmark, <i><b>PanelBench</b></i>, to assess our framework and
+                  other
+                  automatic
+                  debate judging approaches, covering multi-dimensional and multi-debater scenarios.
+                </li>
+                <li>
+                  Under both settings, Debatrix <b>significantly improves ChatGPT</b>, aiding it in judging long debates
+                  that
+                  exceed the context window and <b>outperforming bare GPT-4</b>.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
